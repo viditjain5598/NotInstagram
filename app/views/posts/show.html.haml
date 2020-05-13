@@ -1,7 +1,10 @@
 %h1= @post.title
 %p= @post.description
 %p= @post.user.email
-
+.col-md-8.col-md-offset-2
+  .panel.panel-default
+    .panel-heading.post-image
+      %p= image_tag(@post.image)
 = link_to "Back", root_path
 = link_to "Edit", edit_post_path
 = link_to "Delete", post_path, method: :delete, data: { confirm: "Are you sure?" }
