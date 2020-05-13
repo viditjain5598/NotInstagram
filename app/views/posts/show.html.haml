@@ -1,5 +1,6 @@
 %h1= @post.title
 %p= @post.description
+%p= @post.user.email
 
 = link_to "Back", root_path
 = link_to "Edit", edit_post_path
