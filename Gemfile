@@ -21,6 +21,8 @@ gem 'haml', '~> 5.1', '>= 5.1.2'
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 gem 'simple_form', '~> 5.0', '>= 5.0.2'
 gem 'devise', '~> 4.7', '>= 4.7.1'
+gem 'will_paginate', '~> 3.3'
+gem 'will_paginate_infinite', '~> 0.1.3'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
