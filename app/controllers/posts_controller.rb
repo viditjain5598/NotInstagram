@@ -3,11 +3,7 @@ class PostsController < ApplicationController
 
 
   def index 
-    @posts = Post.order(:created_at => "DESC").paginate(:page => params[:page], :per_page => 3)
-    respond_to do |format|
-      format.html
-      format.js
-    end
+    @posts = Post.order(name: :asc).paginate(page: params[:page], per_page: 3)
   end
 
   def show 
