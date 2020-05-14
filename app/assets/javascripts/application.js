@@ -19,4 +19,3 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
-//= require will_paginate_infinite
