@@ -1,0 +1,4 @@
+%div{ :id => "posts" }
+  = render @posts
+%div{ :id => "infinite-scrolling" }
+  = will_paginate @posts
