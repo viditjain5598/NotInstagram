@@ -1,7 +1,8 @@
-- @posts.each do |post|
-  .box.panel.panel-default
-    = link_to (image_tag(post.image)), post
-    %h2= link_to post.title, post
-    %p.user
-      Submitted by
-      = post.user.email
+#post.transitions-enabled
+  - @posts.each do |post|
+    .box.panel.panel-default
+      = link_to (image_tag(post.image, :size => "720x500")), post
+      %h2= link_to post.title, post
+      %p.user
+        Submitted by
+        = post.user.email
